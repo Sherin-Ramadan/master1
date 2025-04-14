@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller Registration | Fitverse</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Signup_sellers.css">
+</head>
+<body>
+    <!-- Loading Spinner -->
+    <div class="spinner-container">
+        <div class="spinner"></div>
+    </div>
+
+    <div class="seller-signup-container">
+        <div class="seller-signup-card">
+            <!-- Header Section -->
+            <div class="signup-header text-center mb-5">
+                <h1 class="display-5 fw-bold">Become a Seller</h1>
+                <p class="text-muted">Join our marketplace and grow your business</p>
+                
+                <!-- Progress Steps -->
+                <div class="progress-steps d-flex justify-content-between position-relative mt-4">
+                    <div class="step active" data-step="1">
+                        <div class="step-circle">1</div>
+                        <div class="step-label d-none d-md-block">Basic Info</div>
+                    </div>
+                    <div class="step" data-step="2">
+                        <div class="step-circle">2</div>
+                        <div class="step-label d-none d-md-block">Store Details</div>
+                    </div>
+                    <div class="step" data-step="3">
+                        <div class="step-circle">3</div>
+                        <div class="step-label d-none d-md-block">Documents</div>
+                    </div>
+                    <div class="step" data-step="4">
+                        <div class="step-circle">4</div>
+                        <div class="step-label d-none d-md-block">Review</div>
+                    </div>
+                    <div class="progress-bar" role="progressbar"></div>
+                </div>
+            </div>
+
+            <!-- Form Section -->
+            <form id="sellerSignupForm" class="needs-validation" novalidate>
+                <!-- Step 1: Basic Information -->
+                <div class="form-step active" data-step="1">
+                    <h3 class="form-step-title mb-4">Personal Information</h3>
+                    
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="fullName" placeholder="John Doe" required>
+                                <label for="fullName">Full Name</label>
+                                <div class="invalid-feedback" id="fullNameError">Please provide your full name</div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="storeName" placeholder="My Store" required>
+                                <label for="storeName">Store Name</label>
+                                <div class="invalid-feedback" id="storeNameError">Please provide your store name</div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                                <label for="email">Email Address</label>
+                                <div class="invalid-feedback" id="emailError">Please provide a valid email</div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="tel" class="form-control" id="phoneNumber" placeholder="+1234567890" required>
+                                <label for="phoneNumber">Phone Number</label>
+                                <div class="invalid-feedback" id="phoneNumberError">Please provide a valid phone number</div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="password" class="form-control" id="password" placeholder="Password" required>
+                                <label for="password">Password</label>
+                                <div class="invalid-feedback" id="passwordError">Password must be at least 8 characters</div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm Password" required>
+                                <label for="confirmPassword">Confirm Password</label>
+                                <div class="invalid-feedback" id="confirmPasswordError">Passwords must match</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2: Store Details -->
+                <div class="form-step" data-step="2">
+                    <h3 class="form-step-title mb-4">Store Information</h3>
+                    
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <select class="form-select" id="productCategory" required>
+                                    <option value="" selected disabled>Select Category</option>
+                                    <option value="Electronics">Electronics</option>
+                                    <option value="Fashion">Fashion</option>
+                                    <option value="Home & Kitchen">Home & Kitchen</option>
+                                    <option value="Sports">Sports</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                                <label for="productCategory">Product Category</label>
+                                <div class="invalid-feedback" id="productCategoryError">Please select a category</div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="url" class="form-control" id="websiteUrl" placeholder="https://example.com">
+                                <label for="websiteUrl">Website URL (Optional)</label>
+                            </div>
+                        </div>
+                        
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="location" placeholder="Country/City" required>
+                                <label for="location">Location</label>
+                                <div class="invalid-feedback" id="locationError">Please provide your location</div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <select class="form-select" id="paymentMethods" required>
+                                    <option value="" selected disabled>Select Payment Method</option>
+                                    <option value="Credit Card">Credit Card</option>
+                                    <option value="PayPal">PayPal</option>
+                                    <option value="Bank Transfer">Bank Transfer</option>
+                                    <option value="Cash on Delivery">Cash on Delivery</option>
+                                </select>
+                                <label for="paymentMethods">Payment Methods</label>
+                                <div class="invalid-feedback" id="paymentMethodsError">Please select payment method</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 3: Upload Documents -->
+                <div class="form-step" data-step="3">
+                    <h3 class="form-step-title mb-4">Required Documents</h3>
+                    
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="card border-0 shadow-sm h-100">
+                                <div class="card-body text-center p-4">
+                                    <i class="fas fa-id-card display-4 text-primary mb-3"></i>
+                                    <h5>ID or Commercial Register</h5>
+                                    <p class="text-muted mb-4">Upload a clear copy of your ID or commercial registration</p>
+                                    <input type="file" class="d-none" id="idDocument" accept=".pdf,.jpg,.jpeg,.png" required>
+                                    <label for="idDocument" class="btn btn-outline-primary px-4">
+                                        <i class="fas fa-cloud-upload-alt me-2"></i>Select File
+                                    </label>
+                                    <div class="invalid-feedback d-block" id="idDocumentError">Please upload your document</div>
+                                    <div id="idDocumentPreview" class="mt-3 text-start"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="card border-0 shadow-sm h-100">
+                                <div class="card-body text-center p-4">
+                                    <i class="fas fa-image display-4 text-primary mb-3"></i>
+                                    <h5>Store Logo</h5>
+                                    <p class="text-muted mb-4">Upload your store logo (Square, min 300x300px)</p>
+                                    <input type="file" class="d-none" id="storeLogo" accept=".jpg,.jpeg,.png" required>
+                                    <label for="storeLogo" class="btn btn-outline-primary px-4">
+                                        <i class="fas fa-cloud-upload-alt me-2"></i>Select File
+                                    </label>
+                                    <div class="invalid-feedback d-block" id="storeLogoError">Please upload your logo</div>
+                                    <div id="storeLogoPreview" class="mt-3 text-start"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 4: Review and Confirm -->
+                <div class="form-step" data-step="4">
+                    <h3 class="form-step-title mb-4">Review Your Information</h3>
+                    
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5 class="mb-3">Personal Details</h5>
+                                    <p><strong>Name:</strong> <span id="reviewFullName"></span></p>
+                                    <p><strong>Store Name:</strong> <span id="reviewStoreName"></span></p>
+                                    <p><strong>Email:</strong> <span id="reviewEmail"></span></p>
+                                    <p><strong>Phone:</strong> <span id="reviewPhoneNumber"></span></p>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5 class="mb-3">Store Details</h5>
+                                    <p><strong>Category:</strong> <span id="reviewProductCategory"></span></p>
+                                    <p><strong>Website:</strong> <span id="reviewWebsiteUrl">N/A</span></p>
+                                    <p><strong>Location:</strong> <span id="reviewLocation"></span></p>
+                                    <p><strong>Payment:</strong> <span id="reviewPaymentMethods"></span></p>
+                                </div>
+                            </div>
+                            
+                            <div class="alert alert-warning mt-4">
+                                <i class="fas fa-exclamation-circle me-2"></i>
+                                After submission, our team will review your application within 24-48 hours.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation Buttons -->
+                <div class="d-flex justify-content-between mt-5">
+                    <button type="button" class="btn btn-outline-secondary btn-prev" disabled>
+                        <i class="fas fa-arrow-left me-2"></i>Previous
+                    </button>
+                    <button type="button" class="btn btn-primary btn-next">
+                        Next<i class="fas fa-arrow-right ms-2"></i>
+                    </button>
+                    <button type="submit" class="btn btn-success btn-submit">
+                        <i class="fas fa-check me-2"></i>Submit Application
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="Signup_sellers.js"></script>
+</body>
+</html>

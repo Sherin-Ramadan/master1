@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Fitverse</title>
+    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <meta name="description" content="Fitverse Blog - Expert fitness advice, workout tips, and nutrition guides">
+</head>
+<body>
+    <!-- Loading Spinner -->
+    <div class="spinner-container" aria-hidden="true">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Blog Main Content -->
+    <main class="blog-main">
+        <div class="container">
+            <div class="blog-header">
+                <h1 class="blog-title">Welcome to the Fitverse Blog</h1>
+                <p class="blog-subtitle">Expert advice, tips, and guides for your fitness journey</p>
+                
+                <div class="blog-search">
+                    <input type="text" placeholder="Search articles..." aria-label="Search articles">
+                    <button aria-label="Search"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+            
+            <div class="blog-grid">
+                <!-- Articles Grid -->
+                <div class="articles-container" id="articles-container">
+                    <!-- Articles will be loaded here via JavaScript -->
+                </div>
+                
+                <!-- Sidebar -->
+                <aside class="blog-sidebar">
+                    <div class="sidebar-widget categories-widget">
+                        <h3>Categories</h3>
+                        <ul class="categories-list">
+                            <li><a href="#" class="active" data-category="all">All Articles</a></li>
+                            <li><a href="#" data-category="Workouts">Workouts</a></li>
+                            <li><a href="#" data-category="Nutrition">Nutrition</a></li>
+                            <li><a href="#" data-category="Supplements">Supplements</a></li>
+                            <li><a href="#" data-category="Yoga">Yoga</a></li>
+                            <li><a href="#" data-category="Mental Health">Mental Health</a></li>
+                            <li><a href="#" data-category="Success Stories">Success Stories</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="sidebar-widget popular-widget">
+                        <h3>Popular Articles</h3>
+                        <div class="popular-articles">
+                            <!-- Popular articles will be loaded here via JavaScript -->
+                        </div>
+                    </div>
+                    
+                    <div class="sidebar-widget newsletter-widget">
+                        <h3>Stay Updated</h3>
+                        <p>Subscribe to our newsletter for weekly fitness tips</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Your email address" aria-label="Email address" required>
+                            <button type="submit" class="btn btn-primary">Subscribe</button>
+                        </form>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <!-- Article Modal -->
+    <div class="modal-overlay" id="modal-overlay" aria-hidden="true">
+        <div class="modal" role="dialog" aria-modal="true">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <div class="modal-content" id="modal-content"></div>
+        </div>
+    </div>
+
+    <script src="blog.js"></script>
+</body>
+</html>

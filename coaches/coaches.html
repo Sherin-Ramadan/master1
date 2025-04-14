@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Coaches | Fitverse</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="coaches.css">
+</head>
+<body>
+    <!-- Coaches Section -->
+    <section class="coaches-section">
+        <div class="container">
+            <div class="section-header">
+                <h1>Meet Our Expert Coaches</h1>
+                <p>Professional trainers to guide your fitness journey</p>
+            </div>
+            
+            <div class="coaches-filter">
+                <div class="search-filter">
+                    <input type="text" id="coach-search" placeholder="Search coaches...">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All Coaches</button>
+                    <button class="filter-btn" data-filter="strength">Strength</button>
+                    <button class="filter-btn" data-filter="cardio">Cardio</button>
+                    <button class="filter-btn" data-filter="yoga">Yoga</button>
+                    <button class="filter-btn" data-filter="nutrition">Nutrition</button>
+                </div>
+            </div>
+            
+            <div class="coaches-grid">
+                <!-- Coach cards will be loaded dynamically from coaches.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="coaches.js"></script>
+</body>
+</html>

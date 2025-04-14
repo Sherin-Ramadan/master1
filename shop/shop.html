@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | Fitverse - Fitness Products</title>
+    <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Spinner -->
+    <div class="spinner-container">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Shop Main Content -->
+    <main class="shop-container">
+        <div class="shop-header">
+            <h1>Fitness Shop</h1>
+            <div class="cart-icon">
+                <a href="cart.html"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a>
+            </div>
+        </div>
+
+        <div class="filters">
+            <div class="filter-section">
+                <h3>Categories</h3>
+                <ul>
+                    <li><a href="#" class="active" data-category="all">All Products</a></li>
+                    <li><a href="#" data-category="supplements">Supplements</a></li>
+                    <li><a href="#" data-category="equipment">Equipment</a></li>
+                    <li><a href="#" data-category="apparel">Apparel</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="products-grid" id="products-container">
+            <!-- Products will be loaded here via JavaScript -->
+        </div>
+    </main>
+
+    <script src="shop.js"></script>
+</body>
+</html>

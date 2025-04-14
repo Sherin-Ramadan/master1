@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community | Fitverse</title>
+    <link rel="stylesheet" href="community.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Spinner -->
+    <div class="spinner-container">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Community Main Content -->
+    <main class="community-main">
+        <div class="container">
+            <h1 class="community-title">Fitverse Community</h1>
+            <p class="community-subtitle">Connect, share, and grow with fitness enthusiasts worldwide</p>
+            
+            <div class="community-grid">
+                <!-- Post Creation Section -->
+                <section class="post-creation">
+                    <div class="post-creation-card">
+                        <h2>Create a Post</h2>
+                        <form id="post-form">
+                            <div class="form-group">
+                                <input type="text" id="post-title" placeholder="Post title..." required>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="post-content" placeholder="Share your thoughts, questions, or experiences..." required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="post-image" class="image-upload-label">
+                                    <i class="fas fa-image"></i> Add Image (Optional)
+                                    <input type="file" id="post-image" accept="image/*">
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <select id="post-category">
+                                    <option value="general">General Discussion</option>
+                                    <option value="nutrition">Nutrition</option>
+                                    <option value="workouts">Workouts</option>
+                                    <option value="questions">Questions</option>
+                                    <option value="tips">Tips & Advice</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Post</button>
+                        </form>
+                    </div>
+                </section>
+                
+                <!-- Posts Feed Section -->
+                <section class="posts-feed">
+                    <div class="feed-filters">
+                        <h3>Filter by Category:</h3>
+                        <div class="category-tags">
+                            <button class="category-tag active" data-category="all">All</button>
+                            <button class="category-tag" data-category="nutrition">Nutrition</button>
+                            <button class="category-tag" data-category="workouts">Workouts</button>
+                            <button class="category-tag" data-category="questions">Questions</button>
+                            <button class="category-tag" data-category="tips">Tips</button>
+                        </div>
+                    </div>
+                    
+                    <div class="posts-container" id="posts-container">
+                        <!-- Posts will be loaded here via JavaScript -->
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Comment Modal -->
+    <div class="modal" id="comment-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-header">
+                <h3>Comments</h3>
+            </div>
+            <div class="modal-body" id="comments-container">
+                <!-- Comments will be loaded here -->
+            </div>
+            <div class="modal-footer">
+                <form id="comment-form">
+                    <input type="text" placeholder="Add a comment..." required>
+                    <button type="submit" class="btn btn-primary">Post</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="community.js"></script>
+</body>
+</html>

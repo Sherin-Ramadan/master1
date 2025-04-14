@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard | Fitverse</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="user-dashboard.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="user-profile">
+                <img src="images/user-avatar.jpg" alt="User Avatar">
+                <h3>John Doe</h3>
+                <p>Premium Member</p>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li class="active"><a href="#"><i class="fas fa-home"></i> Dashboard</a></li>
+                    <li><a href="#"><i class="fas fa-calendar-alt"></i> My Sessions</a></li>
+                    <li><a href="#"><i class="fas fa-comments"></i> Messages</a></li>
+                    <li><a href="#"><i class="fas fa-shopping-bag"></i> My Purchases</a></li>
+                    <li><a href="#"><i class="fas fa-credit-card"></i> Payments</a></li>
+                    <li><a href="#"><i class="fas fa-user-edit"></i> Edit Profile</a></li>
+                    <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="dashboard-header">
+                <h1>User Dashboard</h1>
+                <div class="header-actions">
+                    <div class="notification-bell">
+                        <i class="fas fa-bell"></i>
+                        <span class="notification-count">3</span>
+                    </div>
+                    <button class="logout-btn"><i class="fas fa-sign-out-alt"></i> Logout</button>
+                </div>
+            </header>
+
+            <div class="dashboard-cards">
+                <!-- Upcoming Sessions -->
+                <div class="card upcoming-sessions">
+                    <h2><i class="fas fa-calendar-check"></i> Upcoming Sessions</h2>
+                    <div class="session-list">
+                        <div class="session-item">
+                            <div class="session-info">
+                                <h3>Personal Training</h3>
+                                <p>With: <strong>Sarah Johnson</strong></p>
+                                <p><i class="fas fa-clock"></i> Tomorrow, 10:00 AM</p>
+                            </div>
+                            <button class="btn chat-btn"><i class="fas fa-comment"></i> Chat</button>
+                        </div>
+                        <div class="session-item">
+                            <div class="session-info">
+                                <h3>Yoga Class</h3>
+                                <p>With: <strong>Emma Chen</strong></p>
+                                <p><i class="fas fa-clock"></i> Friday, 4:00 PM</p>
+                            </div>
+                            <button class="btn chat-btn"><i class="fas fa-comment"></i> Chat</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Payment Status -->
+                <div class="card payment-status">
+                    <h2><i class="fas fa-credit-card"></i> Payment Status</h2>
+                    <div class="status-card paid">
+                        <h3>Personal Training</h3>
+                        <p>Amount: $50.00</p>
+                        <p class="status"><i class="fas fa-check-circle"></i> Paid</p>
+                    </div>
+                    <div class="status-card pending">
+                        <h3>Yoga Class</h3>
+                        <p>Amount: $30.00</p>
+                        <p class="status"><i class="fas fa-clock"></i> Pending</p>
+                    </div>
+                </div>
+
+                <!-- Recent Purchases -->
+                <div class="card recent-purchases">
+                    <h2><i class="fas fa-shopping-bag"></i> Recent Purchases</h2>
+                    <div class="purchase-item">
+                        <img src="images/protein.jpg" alt="Protein Powder">
+                        <div class="purchase-info">
+                            <h3>Whey Protein</h3>
+                            <p>Order #12345</p>
+                            <p><i class="fas fa-truck"></i> Delivered</p>
+                        </div>
+                    </div>
+                    <div class="purchase-item">
+                        <img src="images/yoga-mat.jpg" alt="Yoga Mat">
+                        <div class="purchase-info">
+                            <h3>Yoga Mat</h3>
+                            <p>Order #12346</p>
+                            <p><i class="fas fa-shipping-fast"></i> Shipping</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="user-dashboard.js"></script>
+</body>
+</html>

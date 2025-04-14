@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitverse - World-Class Fitness Platform</title>
+    <meta name="description" content="Train with expert coaches, buy premium fitness gear, join our fitness community">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="home page..css">
+</head>
+<body>
+    <!-- Loading Spinner -->
+    <div class="spinner-container">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <i class="fas fa-dumbbell"></i>
+                    <span>Fitverse</span>
+                </a>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="coaches.html"><i class="fas fa-users"></i> Coaches</a></li>
+                <li><a href="shop.html"><i class="fas fa-store"></i> Shop</a></li>
+                <li><a href="community.html"><i class="fas fa-comments"></i> Community</a></li>
+                <li><a href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+            
+            <div class="auth-buttons">
+                <a href="login.html" class="login-btn"><i class="fas fa-sign-in-alt"></i> Login</a>
+                <a href="register.html" class="register-btn"><i class="fas fa-user-plus"></i> Register</a>
+            </div>
+            
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h4 class="subtitle">Join Our Fitness Revolution</h4>
+                    <h1 class="title">Train With World-Class <span>Coaches</span> Online</h1>
+                    <p class="description">Get personalized training programs, nutrition plans, and premium fitness gear all in one place.</p>
+                    <div class="cta-buttons">
+                        <a href="coaches.html" class="btn primary-btn">Find Your Coach</a>
+                        <a href="register.html" class="btn secondary-btn">Start Free Trial</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="images/hero-image.png" alt="Fitness Coach">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <i class="fas fa-users"></i>
+                    <h3 class="count" data-target="50000">0</h3>
+                    <p>Active Members</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <h3 class="count" data-target="250">0</h3>
+                    <p>Expert Coaches</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-calendar-check"></i>
+                    <h3 class="count" data-target="100000">0</h3>
+                    <p>Sessions Completed</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-trophy"></i>
+                    <h3 class="count" data-target="15">0</h3>
+                    <p>Global Awards</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coaches Section -->
+    <section class="coaches">
+        <div class="container">
+            <div class="section-header">
+                <h2>Meet Our <span>Elite Coaches</span></h2>
+                <p>Certified professionals ready to help you achieve your goals</p>
+            </div>
+            
+            <div class="coaches-grid">
+                <!-- Coach 1 -->
+                <div class="coach-card">
+                    <div class="coach-image">
+                        <img src="images/coach1.jpg" alt="Coach Sarah">
+                        <div class="badge">Featured</div>
+                    </div>
+                    <div class="coach-info">
+                        <h3>Sarah Johnson</h3>
+                        <p class="specialty">Bodybuilding Specialist</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>4.7 (128 reviews)</span>
+                        </div>
+                        <div class="coach-actions">
+                            <a href="coach-profile.html?id=1" class="btn profile-btn">View Profile</a>
+                            <a href="chat.html?id=1" class="btn chat-btn">Chat Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Coach 2 -->
+                <div class="coach-card">
+                    <div class="coach-image">
+                        <img src="images/coach2.jpg" alt="Coach Mike">
+                        <div class="badge">Popular</div>
+                    </div>
+                    <div class="coach-info">
+                        <h3>Mike Rodriguez</h3>
+                        <p class="specialty">CrossFit Trainer</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>5.0 (92 reviews)</span>
+                        </div>
+                        <div class="coach-actions">
+                            <a href="coach-profile.html?id=2" class="btn profile-btn">View Profile</a>
+                            <a href="chat.html?id=2" class="btn chat-btn">Chat Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Coach 3 -->
+                <div class="coach-card">
+                    <div class="coach-image">
+                        <img src="images/coach3.jpg" alt="Coach Emma">
+                    </div>
+                    <div class="coach-info">
+                        <h3>Emma Chen</h3>
+                        <p class="specialty">Yoga & Pilates Expert</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>5.0 (156 reviews)</span>
+                        </div>
+                        <div class="coach-actions">
+                            <a href="coach-profile.html?id=3" class="btn profile-btn">View Profile</a>
+                            <a href="chat.html?id=3" class="btn chat-btn">Chat Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section-footer">
+                <a href="coaches.html" class="btn view-all-btn">View All Coaches <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose <span>Fitverse</span></h2>
+                <p>We offer everything you need for your fitness journey</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-video"></i>
+                    <h3>Live Sessions</h3>
+                    <p>Interactive live training with real-time feedback from coaches</p>
+                </div>
+                
+                <div class="feature-card">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Nutrition Plans</h3>
+                    <p>Personalized meal plans tailored to your goals</p>
+                </div>
+                
+                <div class="feature-card">
+                    <i class="fas fa-shipping-fast"></i>
+                    <h3>Fast Delivery</h3>
+                    <p>Get your fitness gear delivered within 2-3 days</p>
+                </div>
+                
+                <div class="feature-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Community</h3>
+                    <p>Connect with like-minded fitness enthusiasts</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our <span>Members Say</span></h2>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="user-info">
+                        <img src="images/user1.jpg" alt="User">
+                        <div class="user-details">
+                            <h4>John Smith</h4>
+                            <p>Lost 15kg in 3 months</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-text">
+                        <p>"Fitverse completely transformed my fitness journey. My coach was incredibly supportive and knowledgeable."</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="user-info">
+                        <img src="images/user2.jpg" alt="User">
+                        <div class="user-details">
+                            <h4>Emily Wilson</h4>
+                            <p>Gained 5kg muscle</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-text">
+                        <p>"The nutrition plans and workout routines helped me achieve my dream physique. Highly recommended!"</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Transform Your Body?</h2>
+                <p>Join thousands of satisfied members today</p>
+                <a href="register.html" class="btn cta-btn">Start Your 7-Day Free Trial</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo">
+                        <a href="index.html">
+                            <i class="fas fa-dumbbell"></i>
+                            <span>Fitverse</span>
+                        </a>
+                    </div>
+                    <p>World-class fitness platform connecting athletes with expert coaches.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="coaches.html">Coaches</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="community.html">Community</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Fitness St, Health City</li>
+                        <li><i class="fas fa-phone"></i> +1 (234) 567-890</li>
+                        <li><i class="fas fa-envelope"></i> info@fitverse.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Fitverse. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="home page.js"></script>
+</body>
+</html>

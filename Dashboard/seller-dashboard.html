@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller Dashboard | Fitverse</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="seller-dashboard.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="seller-profile">
+                <img src="images/seller-avatar.jpg" alt="Seller Avatar">
+                <h3>Fitness Gear Pro</h3>
+                <p>Verified Seller</p>
+                <div class="balance">
+                    <span>Available Balance:</span>
+                    <strong>$2,450.00</strong>
+                </div>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li class="active"><a href="#"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                    <li><a href="#"><i class="fas fa-box-open"></i> Products</a></li>
+                    <li><a href="#"><i class="fas fa-shopping-cart"></i> Orders</a></li>
+                    <li><a href="#"><i class="fas fa-comments"></i> Customer Messages</a></li>
+                    <li><a href="#"><i class="fas fa-star"></i> Reviews</a></li>
+                    <li><a href="#"><i class="fas fa-chart-line"></i> Sales Analytics</a></li>
+                    <li><a href="#"><i class="fas fa-wallet"></i> Payouts</a></li>
+                    <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="dashboard-header">
+                <h1>Seller Dashboard</h1>
+                <div class="header-actions">
+                    <button class="btn add-product-btn"><i class="fas fa-plus"></i> Add Product</button>
+                    <div class="notification-bell">
+                        <i class="fas fa-bell"></i>
+                        <span class="notification-count">5</span>
+                    </div>
+                    <button class="logout-btn"><i class="fas fa-sign-out-alt"></i> Logout</button>
+                </div>
+            </header>
+
+            <div class="stats-cards">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-boxes"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Total Products</h3>
+                        <p>24</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Total Orders</h3>
+                        <p>156</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Monthly Sales</h3>
+                        <p>$3,245</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Average Rating</h3>
+                        <p>4.6/5</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dashboard-sections">
+                <!-- Products Section -->
+                <div class="section-card">
+                    <div class="section-header">
+                        <h2><i class="fas fa-box-open"></i> Your Products</h2>
+                        <button class="btn view-all">View All</button>
+                    </div>
+                    <div class="products-grid">
+                        <!-- Product 1 -->
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="images/protein-powder.jpg" alt="Protein Powder">
+                                <div class="product-actions">
+                                    <button class="btn edit-btn"><i class="fas fa-edit"></i></button>
+                                    <button class="btn delete-btn"><i class="fas fa-trash"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Whey Protein</h3>
+                                <p class="price">$39.99</p>
+                                <div class="product-stats">
+                                    <span><i class="fas fa-shopping-cart"></i> 42 sales</span>
+                                    <span><i class="fas fa-star"></i> 4.7 (56)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Product 2 -->
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="images/yoga-mat.jpg" alt="Yoga Mat">
+                                <div class="product-actions">
+                                    <button class="btn edit-btn"><i class="fas fa-edit"></i></button>
+                                    <button class="btn delete-btn"><i class="fas fa-trash"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Premium Yoga Mat</h3>
+                                <p class="price">$29.99</p>
+                                <div class="product-stats">
+                                    <span><i class="fas fa-shopping-cart"></i> 38 sales</span>
+                                    <span><i class="fas fa-star"></i> 4.5 (42)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add Product Card -->
+                        <div class="add-product-card">
+                            <button class="btn add-btn">
+                                <i class="fas fa-plus-circle"></i>
+                                <span>Add New Product</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Orders -->
+                <div class="section-card">
+                    <div class="section-header">
+                        <h2><i class="fas fa-shopping-cart"></i> Recent Orders</h2>
+                        <button class="btn view-all">View All</button>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="orders-table">
+                            <thead>
+                                <tr>
+                                    <th>Order ID</th>
+                                    <th>Customer</th>
+                                    <th>Product</th>
+                                    <th>Date</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>#ORD1001</td>
+                                    <td>John Smith</td>
+                                    <td>Whey Protein</td>
+                                    <td>Today, 10:30 AM</td>
+                                    <td><span class="status processing">Processing</span></td>
+                                    <td>
+                                        <button class="btn action-btn view-btn"><i class="fas fa-eye"></i></button>
+                                        <button class="btn action-btn chat-btn"><i class="fas fa-comment"></i></button>
+                                        <button class="btn action-btn complete-btn"><i class="fas fa-check"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#ORD1002</td>
+                                    <td>Emily Wilson</td>
+                                    <td>Yoga Mat</td>
+                                    <td>Yesterday, 4:15 PM</td>
+                                    <td><span class="status shipped">Shipped</span></td>
+                                    <td>
+                                        <button class="btn action-btn view-btn"><i class="fas fa-eye"></i></button>
+                                        <button class="btn action-btn chat-btn"><i class="fas fa-comment"></i></button>
+                                        <button class="btn action-btn track-btn"><i class="fas fa-truck"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#ORD1003</td>
+                                    <td>Michael Brown</td>
+                                    <td>Dumbbell Set</td>
+                                    <td>2 days ago, 9:45 AM</td>
+                                    <td><span class="status delivered">Delivered</span></td>
+                                    <td>
+                                        <button class="btn action-btn view-btn"><i class="fas fa-eye"></i></button>
+                                        <button class="btn action-btn chat-btn"><i class="fas fa-comment"></i></button>
+                                        <button class="btn action-btn review-btn"><i class="fas fa-star"></i></button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Recent Reviews -->
+                <div class="section-card">
+                    <div class="section-header">
+                        <h2><i class="fas fa-star"></i> Recent Reviews</h2>
+                        <button class="btn view-all">View All</button>
+                    </div>
+                    <div class="reviews-list">
+                        <div class="review-item">
+                            <div class="reviewer-info">
+                                <img src="images/user1.jpg" alt="User">
+                                <div>
+                                    <h3>John Smith</h3>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="review-text">
+                                <p>"Excellent protein powder! Mixes well and tastes great."</p>
+                                <span class="review-product">On: Whey Protein</span>
+                                <span class="review-date">2 days ago</span>
+                            </div>
+                        </div>
+                        <div class="review-item">
+                            <div class="reviewer-info">
+                                <img src="images/user2.jpg" alt="User">
+                                <div>
+                                    <h3>Emily Wilson</h3>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="review-text">
+                                <p>"The yoga mat is good quality but could be thicker."</p>
+                                <span class="review-product">On: Premium Yoga Mat</span>
+                                <span class="review-date">1 week ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Add Product Modal -->
+    <div class="modal" id="addProductModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Add New Product</h2>
+                <button class="close-btn">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="addProductForm">
+                    <div class="form-group">
+                        <label for="productName">Product Name</label>
+                        <input type="text" id="productName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="productPrice">Price ($)</label>
+                        <input type="number" id="productPrice" step="0.01" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="productDescription">Description</label>
+                        <textarea id="productDescription" rows="4" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="productImage">Product Image</label>
+                        <input type="file" id="productImage" accept="image/*" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="productCategory">Category</label>
+                        <select id="productCategory" required>
+                            <option value="">Select Category</option>
+                            <option value="supplements">Supplements</option>
+                            <option value="equipment">Equipment</option>
+                            <option value="clothing">Clothing</option>
+                            <option value="accessories">Accessories</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="productStock">Stock Quantity</label>
+                        <input type="number" id="productStock" required>
+                    </div>
+                    <button type="submit" class="btn submit-btn">Add Product</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="seller-dashboard.js"></script>
+</body>
+</html>

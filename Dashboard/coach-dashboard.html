@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coach Dashboard | Fitverse</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="coach-dashboard.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="coach-profile">
+                <img src="images/coach-avatar.jpg" alt="Coach Avatar">
+                <h3>Sarah Johnson</h3>
+                <p>Professional Trainer</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span>4.7 (128 reviews)</span>
+                </div>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li class="active"><a href="#"><i class="fas fa-home"></i> Dashboard</a></li>
+                    <li><a href="#"><i class="fas fa-calendar-alt"></i> Schedule</a></li>
+                    <li><a href="#"><i class="fas fa-users"></i> Clients</a></li>
+                    <li><a href="#"><i class="fas fa-comments"></i> Messages</a></li>
+                    <li><a href="#"><i class="fas fa-chart-line"></i> Earnings</a></li>
+                    <li><a href="#"><i class="fas fa-user-edit"></i> Profile</a></li>
+                    <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="dashboard-header">
+                <h1>Coach Dashboard</h1>
+                <div class="header-actions">
+                    <div class="notification-bell">
+                        <i class="fas fa-bell"></i>
+                        <span class="notification-count">5</span>
+                    </div>
+                    <button class="logout-btn"><i class="fas fa-sign-out-alt"></i> Logout</button>
+                </div>
+            </header>
+
+            <div class="stats-cards">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Total Clients</h3>
+                        <p>87</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Upcoming Sessions</h3>
+                        <p>12</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Monthly Earnings</h3>
+                        <p>$2,450</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Average Rating</h3>
+                        <p>4.7/5</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dashboard-sections">
+                <!-- Upcoming Sessions -->
+                <div class="section-card">
+                    <div class="section-header">
+                        <h2><i class="fas fa-calendar-alt"></i> Today's Sessions</h2>
+                        <button class="btn view-all">View All</button>
+                    </div>
+                    <div class="sessions-list">
+                        <div class="session-item">
+                            <div class="session-time">
+                                <span>10:00 AM</span>
+                            </div>
+                            <div class="session-details">
+                                <h3>Personal Training</h3>
+                                <p>With: <strong>John Doe</strong></p>
+                                <p><i class="fas fa-clock"></i> 60 minutes</p>
+                            </div>
+                            <div class="session-actions">
+                                <button class="btn start-btn">Start Session</button>
+                                <button class="btn message-btn"><i class="fas fa-comment"></i></button>
+                            </div>
+                        </div>
+                        <div class="session-item">
+                            <div class="session-time">
+                                <span>2:00 PM</span>
+                            </div>
+                            <div class="session-details">
+                                <h3>Nutrition Consultation</h3>
+                                <p>With: <strong>Emily Wilson</strong></p>
+                                <p><i class="fas fa-clock"></i> 45 minutes</p>
+                            </div>
+                            <div class="session-actions">
+                                <button class="btn start-btn">Start Session</button>
+                                <button class="btn message-btn"><i class="fas fa-comment"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pending Bookings -->
+                <div class="section-card">
+                    <div class="section-header">
+                        <h2><i class="fas fa-clock"></i> Pending Bookings</h2>
+                        <button class="btn view-all">View All</button>
+                    </div>
+                    <div class="bookings-list">
+                        <div class="booking-item">
+                            <div class="booking-info">
+                                <h3>CrossFit Session</h3>
+                                <p>From: <strong>Michael Brown</strong></p>
+                                <p><i class="fas fa-calendar"></i> Tomorrow, 4:00 PM</p>
+                            </div>
+                            <div class="booking-actions">
+                                <button class="btn accept-btn">Accept</button>
+                                <button class="btn decline-btn">Decline</button>
+                            </div>
+                        </div>
+                        <div class="booking-item">
+                            <div class="booking-info">
+                                <h3>Yoga Class</h3>
+                                <p>From: <strong>Jessica Lee</strong></p>
+                                <p><i class="fas fa-calendar"></i> Friday, 9:00 AM</p>
+                            </div>
+                            <div class="booking-actions">
+                                <button class="btn accept-btn">Accept</button>
+                                <button class="btn decline-btn">Decline</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Reviews -->
+                <div class="section-card">
+                    <div class="section-header">
+                        <h2><i class="fas fa-star"></i> Recent Reviews</h2>
+                        <button class="btn view-all">View All</button>
+                    </div>
+                    <div class="reviews-list">
+                        <div class="review-item">
+                            <div class="reviewer-info">
+                                <img src="images/user1.jpg" alt="User">
+                                <div>
+                                    <h3>John Smith</h3>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="review-text">
+                                <p>"Sarah is an amazing trainer! She helped me lose 15kg in just 3 months with her personalized training program."</p>
+                                <span class="review-date">2 days ago</span>
+                            </div>
+                        </div>
+                        <div class="review-item">
+                            <div class="reviewer-info">
+                                <img src="images/user2.jpg" alt="User">
+                                <div>
+                                    <h3>Emily Wilson</h3>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="review-text">
+                                <p>"The nutrition plan Sarah created for me was perfect. I've never felt better!"</p>
+                                <span class="review-date">1 week ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="coach-dashboard.js"></script>
+</body>
+</html>
